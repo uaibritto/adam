@@ -1,4 +1,4 @@
-import { query } from "@/config/connection"
+import { db as query } from "@/config/connection"
 
 await query`
     CREATE TABLE IF NOT EXISTS todos (
