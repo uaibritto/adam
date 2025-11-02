@@ -1,0 +1,70 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+    "formatter": {
+        "enabled": true,
+        "bracketSameLine": true,
+        "bracketSpacing": true,
+        "formatWithErrors": true,
+        "attributePosition": "auto",
+        "lineWidth": 120,
+        "indentStyle": "tab",
+        "indentWidth": 4
+    },
+    "html": {
+        "formatter": {
+            "enabled": true,
+            "indentWidth": 4,
+            "lineWidth": 100,
+            "indentStyle": "space",
+            "bracketSameLine": false,
+            "selfCloseVoidElements": "always",
+            "attributePosition": "auto"
+        },
+        "parser": {
+            "interpolation": false
+        }
+    },
+    "css": {
+        "formatter": {
+            "enabled": true,
+            "quoteStyle": "double"
+        },
+        "parser": {
+            "tailwindDirectives": true
+        }
+    },
+    "javascript": {
+        "parser": {
+            "unsafeParameterDecoratorsEnabled": true,
+            "jsxEverywhere": true
+        },
+        "jsxRuntime": "transparent",
+        "formatter": {
+            "enabled": true,
+            "jsxQuoteStyle": "double",
+            "arrowParentheses": "asNeeded",
+            "quoteStyle": "double",
+            "semicolons": "asNeeded",
+            "trailingCommas": "es5",
+            "bracketSameLine": false,
+            "bracketSpacing": true,
+            "operatorLinebreak": "before"
+        }
+    },
+    "json": {
+        "formatter": {
+            "enabled": true,
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "trailingCommas": "none",
+            "bracketSpacing": true
+        },
+        "parser": {
+            "allowComments": true,
+            "allowTrailingCommas": true
+        }
+    },
+    "files": {
+        "includes": ["**", "!!**/dist"]
+    }
+}
